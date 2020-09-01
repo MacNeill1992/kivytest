@@ -1,0 +1,129 @@
+#:import utils kivy.utils
+
+<HomeScreen>:
+
+    FloatLayout:
+        ScrollView:
+            pos_hint: {"top": 1, "right": 1}
+            size_hint: 1, .1
+            Label:
+                text: "Scroll view header " * 100
+                size_hint_x: 1.0
+                size_hint_y: None
+                text_size: self.width,None
+                height: self.texture_size[1]
+        GridLayout:
+            pos_hint: {"top": .9, "right": 1}
+            size_hint: 1, .2
+
+
+        Carousel:
+
+            #list Expenses by month
+            pos_hint: {"top": .8, "right": 1}
+            size_hint: 1, .7
+            id: expense_months
+            FloatLayout:
+                #salmon
+                canvas:
+                    Color:
+                        rgb: utils.get_color_from_hex("#FFA07A")
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                Label:
+                    #aqua
+                    text: "label 1"
+                    color: 1, 0, 1, 1
+                    pos_hint: {"top": 1, "right": 1}
+                    size_hint: 1, .2
+
+                ScrollView:
+                    #gREEN
+                    size_hint: 1, 0.8
+
+                    GridLayout:
+                        size_hint_y: None
+                        cols: 1
+                        height: self.minimum_height
+                        row_default_height: '50'
+                        row_force_default: True
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+
+
+            FloatLayout:
+                #salmon
+                canvas:
+                    Color:
+                        rgb: utils.get_color_from_hex("#123133")
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                Label:
+                    #aqua
+                    text: "label 1"
+                    color: 1, 0, 1, 1
+                    pos_hint: {"top": 1, "right": 1}
+                    size_hint: 1, .2
+
+                ScrollView:
+                    #gREEN
+                    size_hint: 1, 0.8
+
+                    GridLayout:
+                        size_hint_y: None
+                        cols: 1
+                        height: self.minimum_height
+                        row_default_height: '50'
+                        row_force_default: True
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+
+
+
+

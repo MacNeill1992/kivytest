@@ -23,6 +23,41 @@
             pos_hint: {"top": .8, "right": 1}
             size_hint: 1, .7
             id: expense_months
+
+            FloatLayout:
+                #salmon
+                canvas:
+                    Color:
+                        rgb: utils.get_color_from_hex("#2F575D")
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                Label:
+                    #aqua
+                    text: "label 1"
+                    color: 1, 0, 1, 1
+                    pos_hint: {"top": 1, "right": 1}
+                    size_hint: 1, .2
+
+                ScrollView:
+                    #gREEN
+                    size_hint: 1, 0.8
+
+                    GridLayout:
+                        size_hint_y: None
+                        cols: 1
+                        height: self.minimum_height
+                        row_default_height: '50'
+                        row_force_default: True
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+                        Label:
+                            text: "Carousel Scroll view "
+
             FloatLayout:
                 #salmon
                 canvas:
